@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java script</title>
+</head>
+<body>
+<script type="text/javascript">
+	var name
+	var now=new Date()
+	var hour=now.getHours()
+	name=window.prompt("input your name")
+	if(hour<12)
+		document.write(" Good Morning ")
+	if(hour>=12)
+	{
+		hour=hour-12
+		if(hour<6)
+			document.write(" Good Afternoon ")
+		if(hour>=6)
+			document.write(" Good Evening ")
+	}
+	document.write(" Hello " +name)
+
+</script>
+</body>
+</html>
